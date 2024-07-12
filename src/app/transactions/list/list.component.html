@@ -1,0 +1,28 @@
+<main>
+    <div class="table-div">
+        <h1>Transactions</h1>
+        <ng-container *ngIf="transactions.length>=1">
+            <table>
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Date</td>
+                        <td>Comments</td>
+                        <td>Actions</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let transaction of transactions">
+                        <td>{{transaction.id}}</td>
+                        <td>{{transaction.date | date: 'dd/MM/yyyy'}}</td>
+                        <td>{{transaction.Comments}}</td>
+                        <td><a [routerLink]="['../details/'+ transaction.id, transaction]">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-container>
+        <ng-container *ngIf="transactions.length<=0">
+            <p>No Transaction Found</p>
+        </ng-container>
+    </div>
+</main>

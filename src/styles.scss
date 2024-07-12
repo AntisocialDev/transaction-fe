@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+    padding: 20px;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid #000000;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+
+.table-div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    align-self: center;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+    margin: auto;
+
+    button {
+        width: 100%;
+    }
+}
+
+button {
+    padding: 5px;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+}
+
+.ng-invalid{
+    button{
+        background-color: gray !important;
+        cursor: not-allowed;
+    }
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    input{
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+       
+    }
+}
