@@ -1,0 +1,18 @@
+<main>
+    <form (ngSubmit)="onSubmit()" [formGroup]="transactionFG">
+        <h1>Transaction Details</h1>
+        <div class="input-div">
+            <label>Transaction ID</label>
+            <input formControlName="transactionId" type="text"  readonly>
+        </div>
+        <div class="input-div">
+            <label>Date</label>
+            <input formControlName="date" type="text" readonly>
+        </div>
+        <div class="input-div">
+            <label>Comments</label>
+            <input formControlName="comments" type="text">
+        </div>
+        <button type="submit"  [disabled]="transactionFG.invalid">Update</button>
+    </form>
+</main>
