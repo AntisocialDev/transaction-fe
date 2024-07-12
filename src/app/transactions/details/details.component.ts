@@ -41,6 +41,6 @@ export class DetailsComponent {
     if (date === null) {
       return ''; // Handle null date
     }
-    return this.datePipe.transform(date, 'dd/mm/yyyy');
+    return this.datePipe.transform(date, 'dd/MM/yyyy');
   }
 }
